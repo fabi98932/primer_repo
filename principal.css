@@ -1,0 +1,184 @@
+
+body
+{
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 50px;
+  padding: 20px;
+  color: #333;
+}
+
+header
+{
+  background-color: #4682b4;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+section
+{
+  margin-top: 20px;
+}
+
+h1 
+{
+  font-size: 28px;
+}
+
+h2 
+{
+  color: #2e5c8a;
+  font-size: 24px;
+}
+
+p
+{
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+}
+p.centrado
+{
+  text-align: center;
+}
+
+ul
+{
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+li
+{
+  margin-bottom: 10px;
+}
+
+img
+{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+img.center-large
+{
+  width: 40%;
+}
+
+
+img.center-medium
+{
+  width: 30%;
+}
+
+img.align-left
+{
+  float: left;
+  width: 20%;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+table
+{
+  width:50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 18px;
+ margin-left: auto;
+  margin-right: auto;
+}
+
+td
+{
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th
+{
+  background-color: #4682b4;
+  color: white;
+}
+
+tr:nth-child(even)
+{
+  background-color: #e6f0fa;
+}
+.pagina {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+.descripcion {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.frases-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tarjeta {
+  flex: 1 1 30%;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.fondo-rosa {
+  background-color: #fde2e4;
+}
+.fondo-rosado {
+  background-color: #ffc8dd;
+}
+.fondo-lila {
+  background-color: #cdb4db;
+}
+.fondo-verde {
+  background-color: #b5ead7;
+}
+.fondo-amarillo {
+  background-color: #fdfcdc;
+}
+.fondo-celeste {
+  background-color: #a0c4ff;
+}
+.fondo-menta {
+  background-color: #d0f4de;
+}
+.hablar-salud-mental {
+  background-color: #e3f2fd;
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  color: #1565c0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.bloque {
+  margin-bottom: 2rem;
+}
+
+.cita-frase blockquote {
+  font-style: italic;
+  background-color: #bbdefb;
+  border-left: 5px solid #1976d2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #0d47a1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

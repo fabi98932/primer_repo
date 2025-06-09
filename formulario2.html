@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Formulario en html</title>
+  <title>Formulario Salud Mental</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #eafaf1; /* Verde menta muy suave */
+      background: #eafaf1;
       color: #444;
       display: flex;
       justify-content: center;
@@ -15,7 +14,7 @@
 
     .form-container {
       background: #fff;
-      border: 3px solid #bde0fe; /* Borde azul cielo pastel */
+      border: 3px solid #bde0fe;
       border-radius: 20px;
       box-shadow: 0 0 20px rgba(173, 216, 230, 0.3);
       padding: 30px 40px;
@@ -24,7 +23,7 @@
 
     h1, h2 {
       text-align: center;
-      color: #8e9aaf; /* Lavanda grisácea */
+      color: #8e9aaf;
     }
 
     label {
@@ -34,14 +33,13 @@
     }
 
     input[type="text"],
-    input[type="password"],
     textarea {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
       border: 1px solid #d0f4de;
       border-radius: 10px;
-      background-color: #fef6e4; /* Durazno muy suave */
+      background-color: #fef6e4;
     }
 
     textarea {
@@ -71,7 +69,7 @@
     input[type="reset"] {
       padding: 10px 25px;
       border: none;
-      background-color: #ffcbf2; /* Rosa lavanda suave */
+      background-color: #ffcbf2;
       color: #333;
       font-weight: bold;
       border-radius: 12px;
@@ -90,49 +88,55 @@
   <div class="form-container">
     <h1>Salud Mental y Bienestar Emocional</h1>
     <h2>Responde las siguientes preguntas:</h2>
-<form action="https://formsubmit.co/aguilarrodriguezblancafabiola @gmail.com" method="POST">
-<input type="hidden" name="_captcha" value="false">
+
+    <form action="https://formsubmit.co/aguilarrodriguezblancafabiola@gmail.com" method="POST">
+      <!-- OPCIONAL: página de gracias -->
+      <input type="hidden" name="_next" value="https://gracias.com">
+      <!-- Desactiva CAPTCHA -->
+      <input type="hidden" name="_captcha" value="false">
 
       <label>Nombre
-        <input type="text" placeholder="Escribe tu nombre">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
       </label>
 
       <label>Apellidos
-        <input type="text" placeholder="Escribe tus apellidos">
+        <input type="text" name="apellidos" placeholder="Escribe tus apellidos" required>
       </label>
 
       <label>Ciudad
-        <input type="text" placeholder="Escribe tu ciudad">
+        <input type="text" name="ciudad" placeholder="Escribe tu ciudad">
       </label>
 
       <label>País
-        <input type="text" placeholder="Escribe tu país">
+        <input type="text" name="pais" placeholder="Escribe tu país">
       </label>
 
       <label>Comentario</label>
-      <textarea placeholder="Escribe un comentario..."></textarea>
+      <textarea name="comentario" placeholder="Escribe un comentario..."></textarea>
 
       <div class="checkbox-group">
         <p><strong>¿Qué temas te agradaron?</strong></p>
-        <label><input type="checkbox"> Salud Mental</label>
-        <label><input type="checkbox"> Introducción</label>
-        <label><input type="checkbox"> Bienestar Emocional</label>
-        <label><input type="checkbox"> Diferencias</label>
-        <label><input type="checkbox"> Factores que afectan</label>
-        <label><input type="checkbox"> Importancia del autocuidado</label>
-        <label><input type="checkbox"> Estrategias para fortalecer</label>
-        <label><input type="checkbox"> Rol de las relaciones sociales</label>
-        <label><input type="checkbox"> Señales de alerta</label>
-        <label><input type="checkbox"> Papel de la educación</label>
-        <label><input type="checkbox"> Recursos y herramientas</label>
+        <label><input type="checkbox" name="temas[]" value="Salud Mental"> Salud Mental</label>
+        <label><input type="checkbox" name="temas[]" value="Bienestar Emocional"> Bienestar Emocional</label>
+        <label><input type="checkbox" name="temas[]" value="Diferencias"> Diferencias</label>
+        <label><input type="checkbox" name="temas[]" value="Factores que afectan"> Factores que afectan</label>
+        <label><input type="checkbox" name="temas[]" value="Autocuidado"> Importancia del autocuidado</label>
+        <label><input type="checkbox" name="temas[]" value="Estrategias"> Estrategias para fortalecer</label>
+        <label><input type="checkbox" name="temas[]" value="Relaciones sociales"> Rol de las relaciones sociales</label>
+        <label><input type="checkbox" name="temas[]" value="Señales de alerta"> Señales de alerta</label>
+        <label><input type="checkbox" name="temas[]" value="Educación"> Papel de la educación</label>
+        <label><input type="checkbox" name="temas[]" value="Recursos"> Recursos y herramientas</label>
+        <label><input type="checkbox" name="temas[]" value="Mitos"> Mitos</label>
+        <label><input type="checkbox" name="temas[]" value="Frases"> Frases</label>
+        <label><input type="checkbox" name="temas[]" value="Cómo hablar con otros"> ¿Cómo hablar con otros?</label>
       </div>
 
       <div class="radio-group">
         <p><strong>Califica mi página:</strong></p>
-        <label><input type="radio" name="valor" value="10"> 10</label>
-        <label><input type="radio" name="valor" value="9"> 9</label>
-        <label><input type="radio" name="valor" value="8"> 8</label>
-        <label><input type="radio" name="valor" value="7" checked> 7</label>
+        <label><input type="radio" name="valoracion" value="10"> 10</label>
+        <label><input type="radio" name="valoracion" value="9"> 9</label>
+        <label><input type="radio" name="valoracion" value="8"> 8</label>
+        <label><input type="radio" name="valoracion" value="7" checked> 7</label>
       </div>
 
       <div class="button-group">
@@ -143,6 +147,15 @@
   </div>
 </body>
 </html>
+
+    
+     
+     
+   
+     
+       
+     
+        
 
 
 

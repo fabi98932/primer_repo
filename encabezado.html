@@ -1,17 +1,47 @@
 <html>
 <head>
-    <style>
-        body {
-            text-align: center;
-            font-size: 24px;
-            font-family: Arial;
-            background-color: #2196f3;
-            color: white;
-            margin: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Salud Mental y Bienestar Emocional</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fde2e4, #cddafd); /* Degradado pastel */
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #6c5b7b;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: aparecer 2s ease-out;
+      transition: transform 0.3s;
+    }
+
+    h1:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>SALUD MENTAL Y BIENESTAR EMOCIONAL</h1>
+  <h1>SALUD MENTAL Y BIENESTAR EMOCIONAL</h1>
 </body>
 </html>
